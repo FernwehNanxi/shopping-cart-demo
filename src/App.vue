@@ -1,13 +1,20 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <cart-nav></cart-nav>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
+import store from './vuex/store'
+//import Nav from './components/Nav.vue'
+
 export default {
-  name: 'app'
+  name: 'app',
+  store,
+  components:{
+    'cart-nav':Nav
+  }
 }
 </script>
 
