@@ -1,3 +1,4 @@
+
 <template>
   <div id="cart" class="cart col-md-offset-2 col-sm-offset-2 col-md-8 col-sm-8">
       <div class="panel panel-danger" v-if="cart.length">
@@ -32,22 +33,8 @@ import {mapState,mapActions} from 'vuex'
 
 export default {
     name:'cart',
-    /*vuex:{
-        getters:{
-            cart:({index})=>index.cart
-        },
-        actions:{
-            removeItem
-        }
-    },*/
-    computed:{
-        /*'totalPrice':function(){
-            let totalPrice=0;
-            for(let i in this.cart){
-                totalPrice+=this.cart[i].price
-            }
-            return totalPrice
-        }*/
+
+    computed: {
         ...mapState({
             cart:state=>state.cart.cart
         }),
@@ -67,14 +54,10 @@ export default {
 }
 </script>
 
+
 <style>
   .cart ul {
     padding: 0;
-  }
-
-  .cart ul> li {
-    list-style: none;
-    padding: 4px 8px;
   }
 
   .popover {
@@ -86,7 +69,6 @@ export default {
     border-radius: 4px;
     border: 2px dashed rgb(170, 170, 170);
   }
-
   #content {
     top: 50%;
     width: 100%;

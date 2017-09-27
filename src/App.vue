@@ -2,12 +2,13 @@
   <div id="app">
       <cart-nav></cart-nav>
       <router-view></router-view>
+
   </div>
 </template>
 
 <script>
 import Nav from './components/Nav'
-import router from'./router/index'
+//import router from'./router/index'
 //import store from './vuex/store'
 
 export default {

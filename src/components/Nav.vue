@@ -21,16 +21,7 @@
 import {mapState} from 'vuex'
 export default {
   name:'nav',
-  /*vuex:{
-      getters:{
-          cart:({index})=>index.cart
-      },
-      computed:{
-          'totalItem':function(){
-              return this.cart.length
-          }
-      }
-  }*/
+ 
   computed:{
       ...mapState({
           cart:state=>state.cart.cart

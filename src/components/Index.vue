@@ -1,3 +1,4 @@
+
 <template>
   <div class="container">
       <div class="row">
@@ -83,7 +84,6 @@ export default {
 }
 </script>
 
-
 <style>
 .pomegranage {
   color: #c0392b;
@@ -114,4 +114,3 @@ export default {
   border: 2px solid #c0392b;
 }
 </style>
-
